@@ -45,6 +45,26 @@ public class Produto {
 	@NotNull(message = "O atributo foto é obrigatório!")
 	private String foto;
 	
+	/**
+	 * Relacionamento com a classe Usuario
+	 * Não esqueça de criar os métodos getters e setters para o atributo usuario.
+	 */
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private Usuario usuario;
+
+	
+	/**
+	 * Métodos Get e Set para o atributo usuario
+	 */
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
 	public Long getId() {
 		return id;
 	}
