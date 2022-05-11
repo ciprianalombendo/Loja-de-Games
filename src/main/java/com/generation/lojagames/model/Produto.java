@@ -30,23 +30,19 @@ public class Produto {
 	private String nome;
 	
 	@NotNull(message = "O atributo descrição é obrigatório!")
-	@Size(min = 10, max = 100, message = "O atributo descricão deve conter no minimo 10 e no máximo 100")
+	@Size(min = 5, max = 100, message = "O atributo descricão deve conter no minimo 10 e no máximo 100")
 	private String descricao;
 	
 	@NotNull(message = "O atributo console é obrigatório!")
-	@Size(min = 10, max = 50, message = "O atributo console deve conter no minimo 10 e no máximo 50")
 	private String console;
 	
 	@NotNull(message = "O atributo quantidade é obrigatório!")
-	@Size(min = 10, max = 50, message = "O atributo quantidade deve conter no minimo 10 e no máximo 50")
 	private String quantidade;
 	
 	@NotNull(message = "O atributo preço é obrigatório!")
-	@Size(min = 10, max = 1000, message = "O atributo preço deve conter no minimo 10 e no máximo 1000")
 	private BigDecimal preco;
 	
 	@NotNull(message = "O atributo foto é obrigatório!")
-	@Size(min = 320, max = 1080, message = "O atributo texto deve conter a largura mínima de 320 pixels e máximo de 1080 pixels")
 	private String foto;
 	
 	public Long getId() {
