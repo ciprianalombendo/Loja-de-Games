@@ -1,5 +1,13 @@
 package com.generation.lojagames.security;
 
+import java.util.Collection;
+import java.util.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.generation.lojagames.model.Usuario;
+
 /**
  * Classe UserDetailsImpl 
  * 
@@ -18,7 +26,7 @@ package com.generation.lojagames.security;
  * 3) As Restrições (isAccountNonExpired(), isAccountNonLocked(), 
  *    isCredentialsNonExpired() e isEnabled()) da conta do usuário.
  */
-public class UserDatailsImpl implements UserDetails{
+public class UserDetailsImpl implements UserDetails{
 
 	private static final long serialVersionUID = 1L;
 
